@@ -24,6 +24,7 @@ public abstract class JDBCTemplate {
 		
 	}
 	
+	// template method를 사용하여 쓰고싶은 하위 메서드 -> 자식 클래스에서 정의하여 사용
 	public abstract Connection getConnection();
 	
 	public void commit(Connection conn) {
